@@ -54,7 +54,7 @@ body {
 .user .user-anchor .user-profile {
     width: 80px;
     height: 80px;
-    left:20px;
+    left:30px;
     bottom:-35px;
     position: absolute;
     border-radius: 50%;
@@ -72,7 +72,7 @@ body {
 }
 
 .user .user-body {
-    padding: 0 22px;
+    padding: 0 30px;
 }
 
 .user .user-body .user-title {
@@ -90,4 +90,18 @@ body {
 
 .slide .title {
     margin: 0;
+}
+
+.endnote {
+    margin: 15px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.endnote .endnote-brand * {
+    margin: 0;
+
 }
