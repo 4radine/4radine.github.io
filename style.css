@@ -1,15 +1,30 @@
+:root {
+    --primary-color: #abc4ff;
+
+}
+
+@font-face {
+    font-family: Cosmic Relief;
+    src: url(fonts/Comic_Relief/ComicRelief-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Playwrite;
+    src: url(fonts/Playwrite_CA/PlaywriteCA-VariableFont_wght.ttf);
+}
+
 body {
-    /* margin: 0;
-    padding: 0; */
     background-color: rgb(245, 245, 245);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cosmic Relief;
 }
 
 .pane-primary {
     margin: 0 auto;
 }
 
-.navbar ul {
+.navbar .navbar-nav {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -18,12 +33,23 @@ body {
     padding: 8px;
 }
 
-.navbar .navbar-nav li:not(:first-child) {
+.navbar .navbar-nav .navbar-item:not(:first-child) {
     margin: 0 0 0 20px;
 }
 
+
 .navbar .navbar-nav .navbar-item, .navbar .navbar-nav .navbar-item *{
     text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.navbar .navbar-nav .active {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-nav .active * {
+    color: white
 }
 
 .pane-primary {
@@ -38,7 +64,7 @@ body {
 
 .user .user-anchor {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .user .user-anchor .user-banner {
@@ -52,13 +78,15 @@ body {
 }
 
 .user .user-anchor .user-profile {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     left:30px;
-    bottom:-35px;
+    bottom:-40px;
     position: absolute;
+    border: 5px solid white;
     border-radius: 50%;
     background-color: white; 
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .user .user-anchor .user-quote {
@@ -104,4 +132,9 @@ body {
 .endnote .endnote-brand * {
     margin: 0;
 
+}
+
+.endnote .endnote-brand .brand {
+    font-family: Playwrite;
+    font-size: 25px;
 }
