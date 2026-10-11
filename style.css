@@ -113,7 +113,7 @@ body {
 
 .slide {
     background-color: white;
-    padding: 8px;
+    padding: 30px;
 }
 
 .slide .title {
@@ -137,4 +137,8 @@ body {
 .endnote .endnote-brand .brand {
     font-family: Playwrite;
     font-size: 25px;
+}
+
+.hidden {
+    display: none;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Untitled CV</title>
 </head>
 <body>
@@ -32,15 +33,15 @@
             </div>
 
             <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li class="navbar-item"><a href="#keahlian">Keahlian</a></li>
-                    <li class="navbar-item"><a href="#pendidikan">Riwayat Pendidikan</a></li>
-                    <li class="navbar-item"><a href="#hobi">Hobi</a></li>
-                    <li class="navbar-item"><a href="#contact">Kontak</a></li>
+                <ul class="navbar-nav" data-slide-target="about">
+                    <li class="navbar-item active" data-slide-trigger="keahlian"><a href="#keahlian">Keahlian</a></li>
+                    <li class="navbar-item" data-slide-trigger="pendidikan"><a href="#pendidikan">Riwayat Pendidikan</a></li>
+                    <li class="navbar-item" data-slide-trigger="hobi"><a href="#hobi">Hobi</a></li>
+                    <li class="navbar-item" data-slide-trigger="contact"><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
             
-            <div class="slide">
+            <div class="slide" id="about">
                 <section id="keahlian">
                     <h1 class="title">Keahlian</h1>
                     <dl>
@@ -55,7 +56,7 @@
                     </dl>
                 </section>
 
-                <section id="pendidikan">
+                <section id="pendidikan" class="hidden">
                     <h1>Riwayat Pendidikan</h1>
                     <ol>
                         <li>SD ...(2013-2019)</li>
@@ -64,7 +65,7 @@
                     </ol>
                 </section>
 
-                <section id="hobi">
+                <section id="hobi" class="hidden">
                     <h1>Hobi</h1>
                     <ul>
                         <li>Hardware repurpose</li>
@@ -74,7 +75,7 @@
                     </ul>
                 </section>
 
-                <section id="contact">
+                <section id="contact" class="hidden">
                     <h1>Contact Me!</h1>
                     <form action="POST">
                         <table>
